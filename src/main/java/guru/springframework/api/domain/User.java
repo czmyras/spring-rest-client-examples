@@ -1,4 +1,4 @@
-package guru.springframework.api;
+package guru.springframework.api.domain;
 
 public class User {
 

@@ -1,18 +1,17 @@
 
-package guru.springframework.api;
+package guru.springframework.api.domain;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Name implements Serializable
+public class Job implements Serializable
 {
 
     private String title;
-    private String first;
-    private String last;
+    private String company;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -2493360709028686851L;
+    private final static long serialVersionUID = 319976476228111288L;
 
     public String getTitle() {
         return title;
@@ -22,20 +21,12 @@ public class Name implements Serializable
         this.title = title;
     }
 
-    public String getFirst() {
-        return first;
+    public String getCompany() {
+        return company;
     }
 
-    public void setFirst(String first) {
-        this.first = first;
-    }
-
-    public String getLast() {
-        return last;
-    }
-
-    public void setLast(String last) {
-        this.last = last;
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     public Map<String, Object> getAdditionalProperties() {
