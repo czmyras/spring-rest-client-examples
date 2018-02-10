@@ -29,5 +29,6 @@ public class ApiServiceImplTest {
         List<User> users = apiService.getUsers(3);
 
         assertEquals(4, users.size());
+        assertNotNull(users.get(0).getName());
     }
 }
